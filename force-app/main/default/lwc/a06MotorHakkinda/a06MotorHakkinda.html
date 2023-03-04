@@ -1,0 +1,23 @@
+<template>
+    
+  <h1>MOTOR HAKKINDA</h1>
+  <br>
+
+  <lightning-input 
+  type="text" 
+  label="MOTOR GUCU GIRINIZ" 
+  onblur={handleMotorGucu} >
+
+  </lightning-input>
+  <br>
+
+  <h1>Motor Cinsi :: {motorCinsi} </h1>
+  <br>
+  <c-a06motor-ozellikleri
+  yakit-turu = {yakitTuruParent}
+  motor-gucu = {motorGucuBaba}
+  beygir-gucu =200 >
+
+  </c-a06motor-ozellikleri>
+
+</template>

@@ -1,0 +1,25 @@
+<template>
+    
+  <lightning-card title="ARABA">
+
+    <h1>ARABA</h1>
+    <br>
+
+    <lightning-input 
+    type="text" 
+    label="YAKIT TURU GIRINIZ" 
+    onblur={handleYakitTuru} >
+
+    </lightning-input>
+
+    <h1>Araba markasi :: {arabaMarkasi} </h1>
+    <br>
+    <c-a06-motor-hakkinda
+    motor-cinsi = 'Hybrit'
+    yakit-turu-parent = {yakitTuruDede} >
+    
+    </c-a06-motor-hakkinda>
+
+  </lightning-card>
+
+</template>

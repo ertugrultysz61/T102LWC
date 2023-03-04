@@ -1,0 +1,44 @@
+<template>
+    <lightning-card title="Quiz App in LWC">
+      <form class="slds-m-around_medium">
+        <template for:each={Sorular} for:item="soru">
+          <div key={soru} class="slds-m-around_medium">
+            <div> <strong>{soru.id} - {soru.question} </strong> </div>
+            <div class="slds-m-around_medium">
+
+              <div>
+                <lightning-input type="radio"
+                name={soru.id} value="a" 
+                onchange={handleChange}></lightning-input>
+                <span class="slds-m-around_medium"> {soru.answers.a} </span>
+              </div>
+
+              <div>
+                <lightning-input type="radio"
+                name={soru.id} value="b" 
+                onchange={handleChange}></lightning-input>
+                <span class="slds-m-around_medium"> {soru.answers.b} </span>
+              </div>
+
+              <div>
+                <lightning-input type="radio"
+                name={soru.id} value="c" 
+                onchange={handleChange}></lightning-input>
+                <span class="slds-m-around_medium"> {soru.answers.c} </span>
+              </div>
+
+            </div>
+          </div>
+        </template>
+
+        <lightning-button class="slds-m-around_medium" variant="brand"
+        type="submit" label="Submit" title="Submit Quiz" disabled={allNotSelected}
+        onclick={submitHandler}></lightning-button>
+        
+        <lightning-button class="slds-m-around_medium" variant="brand"
+        type="reset" label="Reset" title="Reset Quiz" onclick={resetHandler}
+        ></lightning-button>
+
+      </form>
+    </lightning-card>
+</template>

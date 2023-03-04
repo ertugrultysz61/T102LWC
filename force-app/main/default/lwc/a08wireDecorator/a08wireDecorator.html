@@ -1,0 +1,14 @@
+<template>
+  <lightning-card title="List için @wire uygulamasi">
+
+    <template for:each={butunAccountlar.data} for:item="acc" >
+      <ol key={acc.Id}>
+        <li>
+          <p> Account adi :: {acc.Name}</p>
+        </li>
+        <br>
+      </ol>
+    </template>
+  
+  </lightning-card>
+</template>

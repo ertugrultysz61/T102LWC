@@ -1,0 +1,12 @@
+h1 {
+  color: red;
+}
+
+p {
+  color: blue;
+}
+
+c-a05child-component {
+  color: gold;
+  --parentdanRenkDegistir : red;
+}

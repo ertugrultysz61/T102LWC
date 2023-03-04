@@ -1,0 +1,11 @@
+<aura:component implements="force:appHostable,
+                            flexipage:availableForAllPageTypes,
+                            flexipage:availableForRecordHome,
+                            force:hasRecordId,
+                            forceCommunity:availableForAllPageTypes,
+                            force:lightningQuickAction" 
+                access="global" >
+    <p>Merhaba Dunya havalar nasil</p>
+    <p>Valla Kanada da normal olarak havalar ayaz</p>
+	
+</aura:component>

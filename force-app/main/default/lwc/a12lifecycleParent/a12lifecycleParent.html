@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="LifeCycle">
+      <h1>PARENT dan geliyor </h1>
+
+      <template for:each={getContactList} for:item="cnt">
+
+        <p key={cnt.Id}> {cnt.Name} </p>
+      </template>
+
+      <c-a12lifecycle-child>
+
+      </c-a12lifecycle-child>
+    </lightning-card>
+</template>
